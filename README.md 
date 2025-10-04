@@ -1,0 +1,19 @@
+Qwen-ScholarLens/
+├── Qwen_1_8B.ipynb            
+├── README.md                  
+├── requirements.txt           
+├── .gitignore                 
+
+
+# ScholarLens: Fine-tuning Qwen1.5-1.8B for Essay Evaluation
+
+A QLoRA-tuned model for structured scholarship essay feedback (Strengths / Weaknesses / Scores / Summary).  
+Trained on ~1K curated examples with near-100% JSON validity and released on HuggingFace Hub as `NewJetsada/ScholarLens`.
+
+## Installation
+```bash
+pip install -q transformers==4.44.0 trl==0.23.0 peft accelerate bitsandbytes
+
+Open the notebook Qwen_1_8B.ipynb in Google Colab, run cells step-by-step, and edit the essay variable to test feedback generation.
+
+
